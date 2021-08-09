@@ -28,16 +28,17 @@ const finalDeliveryCost = deliveryCost(234);
 console.log(finalDeliveryCost);
 
 // 4. Perfect Friend
-function perfectFriend(friendName) {
-    let fiveLetterFriend = friendName[0];
-    for(let i = 0; i < friendName.length; i++) {
-        if(friendName[i].length = fiveLetterFriend.length) {
-            fiveLetterFriend = friendName[i];
+// 4. Perfect Friend
+function perfectFriend(friends) {
+    let element = friends[0];
+    for(let i = 0; i < friends.length; i++) {
+        let element = friends[i];
+        if(element.length == 5) {
+            return element;
         }
     }
-    return fiveLetterFriend;
 }
 
 const friends = ['lipi', 'mahfuz', 'mukit', 'foysal', 'tamim', 'tanzina'];
 var bigNameFriend = perfectFriend(friends);
-// console.log(bigNameFriend);
+console.log(bigNameFriend);
